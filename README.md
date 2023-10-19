@@ -4,7 +4,7 @@
 
 ## Hardware
 
-To be used with a [Kikusui PLZ1004W](kikusui_plz_4wh_m.pdf) electronic load.
+To be used with a [Kikusui PLZ1004W](readme_assets/kikusui_plz_4wh_m.pdf) electronic load.
 We have tested this using an FTDI USB-RS232-0.0 cable.
 The cable needs a DE9 female connector, with a pinout of:
 1.  Not used
