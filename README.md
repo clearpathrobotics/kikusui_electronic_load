@@ -41,3 +41,7 @@ The cable needs a DE9 female connector, with a pinout of:
 | `SOUR:POW 100`       | Changes the load's power to _100 W_ ( or any integer specified from 0 W - 1000 W ) |
 | `INP ON`             | Turns the load _on_                                                                |
 | `INP OFF`            | Turns the load _off_                                                               |
+
+## TODO
+
+1.  Add a launch file
