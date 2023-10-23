@@ -94,4 +94,5 @@ TODO: add a cable drawing and CPR item number.
 
 ## TODO
 
-1.  Add a launch file
+1.  Add udev rules details for the Kikusui FTDI.
+    These are currently set as " _todo_ " in the file `./debian/udev`.
