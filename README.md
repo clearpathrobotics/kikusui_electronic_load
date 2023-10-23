@@ -69,6 +69,49 @@ TODO: add a cable drawing and CPR item number.
 
 <br />
 
+## Usage
+
+### Running the Driver
+
+1.  Open a new terminal.
+2.  Source the workspace:
+    ```
+    source ~/ros2_ws/install/setup.bash
+    ```
+3.  Start the node with either:
+
+    ```
+    ros2 launch kikusui_electronic_load kikusui_electronic_load_launch.py
+    ```
+
+    or
+
+    ```
+    ros2 run kikusui_electronic_load service
+    ```
+
+### Controlling the Load
+
+After starting the package per the steps in _Running the Driver_:
+1.  Open a new terminal.
+2.  Source the workspace:
+    ```
+    source ~/ros2_ws/install/setup.bash
+    ```
+3.  Calling the Service
+    ```
+    ros2 service call /change_load kikusui_electronic_load_interfaces/srv/ChangeLoad "{enable: True, power: 100.0}"
+    ```
+    
+    -   Changing the boolean beside `enable:` to match the relay that you want to control.
+        -  True, to make the electronic load draw power from the circuit (_powered_).
+        -  False, to make the electronic load disconnect from the circuit (_unpowered_).
+    -   Changing the float beside `power:` to a value between _0.0_ and _1000.0_ which represents the amount of power in Watts for the load to consume.
+
+
+<br />
+
+
 ## Reference
 -   [Closed source ROS 1 driver from clearpath](https://gitlab.clearpathrobotics.com/research/kikusui_load_interface)
 -   [Need to use Cmake for SRV](https://answers.ros.org/question/322771/ros2-services-in-python/)
