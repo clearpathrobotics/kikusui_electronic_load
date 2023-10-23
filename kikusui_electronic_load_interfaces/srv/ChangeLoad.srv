@@ -1,0 +1,4 @@
+bool enable
+float32 power
+---
+bool load_response_bool
