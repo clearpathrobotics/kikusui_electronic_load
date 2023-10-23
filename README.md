@@ -1,5 +1,12 @@
 # kikusui_electronic_load
 
+> [!IMPORTANT]  
+> This branch is for [ROS 2 Humble](https://docs.ros.org/en/humble/index.html).
+
+> [!NOTE]  
+> This driver has been tested with a [Kikusui PLZ1004W electronic load](./readme_assets/kikusui_plz_4wh_m.pdf).
+> This drives places the electronic load in a constant power ( _CP_ ) state, lets you set a power draw in Watts, and then toggle the load _On_ or _Off_.
+
 <br />
 
 ## Hardware
