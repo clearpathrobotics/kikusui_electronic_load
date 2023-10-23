@@ -145,3 +145,6 @@ After starting the package per the steps in _Running the Driver_:
 
 1.  Add udev rules details for the Kikusui FTDI.
     These are currently set as " _todo_ " in the file `./debian/udev`.
+2.  Consider adding a Topic with the electronic load's current state:
+    -   Is it on or off? `enable`'s state.
+    -   What power is it set to? `power`'s state.
