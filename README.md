@@ -28,6 +28,47 @@ TODO: add a cable drawing and CPR item number.
 
 <br />
 
+## Installation
+
+1.  Create a workspace and src directory, `~/ros2_ws/src/`.
+2.  Clone this git repository to the directory `~/ros2_ws/src/`.
+    You now have a directory structure of:
+
+    ```bash
+    ~/ros2_ws/
+        └── src/
+            └── kikusui_electronic_load/
+                ├── debian/
+                |   ├── ...
+                |   └── ...
+                ├── kikusui_electronic_load/
+                |   ├── ...
+                |   └── ...
+                ├── kikusui_electronic_load_interfaces/
+                |   ├── ...
+                |   └── ...
+                └── README.md
+    ```
+
+3.  Install the udev rule:
+    ```
+    sudo cp ~/ros2_ws/src/kikusui_electronic_load/debian/udev /etc/udev/rules.d/51-kikusui.rules
+    sudo udevadm control --reload-rules
+    sudo udevadm trigger
+    ```
+4.  Build the workspace:
+    ```
+    cd ~/ros2_ws
+    colcon build
+    ```
+
+5.  Source the workspace:
+    ```
+    source ~/ros2_ws/install/setup.bash
+    ```
+
+<br />
+
 ## Reference
 -   [Closed source ROS 1 driver from clearpath](https://gitlab.clearpathrobotics.com/research/kikusui_load_interface)
 -   [Need to use Cmake for SRV](https://answers.ros.org/question/322771/ros2-services-in-python/)
