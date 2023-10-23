@@ -12,7 +12,7 @@
 ## Hardware
 
 To be used with a [Kikusui PLZ1004W](readme_assets/kikusui_plz_4wh_m.pdf) electronic load.
-We have tested this using an FTDI USB-RS232-0.0 cable.
+We have tested this using an [FTDI USB-RS232-WE-BT-0.0](./readme_assets/ftdi_usb-rs232-we-1800-bt-00.pdf) cable.
 The cable needs a DE9 female connector, with a pinout of:
 1.  Not used
 2.  Transmit (TX), ORANGE
@@ -23,6 +23,8 @@ The cable needs a DE9 female connector, with a pinout of:
 7.  Not used
 8.  Not used
 9.  Not used
+
+TODO: add a cable drawing and CPR item number.
 
 <br />
 
