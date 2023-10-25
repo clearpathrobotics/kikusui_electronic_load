@@ -4,7 +4,13 @@ from launch_ros.actions import Node
 def generate_launch_description():
   kikusui_electronic_load_node = Node(
       package='kikusui_electronic_load',
-      executable='service'
+      executable='service',
+      parameters=[
+        {
+          'port': '/dev/ttyUSB0',
+          'baud': 19200
+        }
+      ]
   )
 
   ld = LaunchDescription()

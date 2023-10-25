@@ -19,8 +19,6 @@
 -   The Kikusui PLZ1004W's FTDI cable connects as device `/dev/ttyUSB0`.
 -   The Kikusui PLZ1004W communicates at 19200 baud.
 
-
-
 <br />
 
 ## Installation
@@ -84,6 +82,10 @@
     ```
     ros2 run kikusui_electronic_load service
     ```
+
+    > [!NOTE]  
+    > `ros2 run` may have issues if the Numato is connected as a device other than the default `/dev/ttyUSB0`.
+    > The launch file includes a line to change this parameter.
 
 ### Controlling the Load
 

@@ -38,8 +38,11 @@ from std_msgs.msg import Bool
 class KikusuiElectronicLoad(Node):
     def __init__(self):
         super().__init__('KikusuiElectronicLoad')
-        self.port = '/dev/ttyUSB0'
-        self.baud = 19200
+
+        self.declare_parameter('port', '/dev/ttyACM0')
+        self.port = self.get_parameter('port').get_parameter_value().string_value
+        self.declare_parameter('baud', 19200)
+        self.baud = self.get_parameter('baud').get_parameter_value().integer_value
         self.serial_port = serial.Serial(self.port, self.baud, timeout=None)
         self.SERIAL_READ_SIZE = 25
         self.serial_lock = Lock()
