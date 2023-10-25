@@ -131,11 +131,3 @@ After starting the package per the steps in _Running the Driver_:
 | `SOUR:POW 100`       | Changes the load's power to _100 W_ ( or any integer specified from 0 W - 1000 W ) |
 | `INP ON`             | Turns the load _on_                                                                |
 | `INP OFF`            | Turns the load _off_                                                               |
-
-## TODO
-
-1.  Add udev rules details for the Kikusui FTDI.
-    These are currently set as " _todo_ " in the file `./debian/udev`.
-2.  Consider adding a Topic with the electronic load's current state:
-    -   Is it on or off? `enable`'s state.
-    -   What power is it set to? `power`'s state.
