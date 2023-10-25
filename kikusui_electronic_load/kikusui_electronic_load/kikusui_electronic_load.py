@@ -49,7 +49,7 @@ class KikusuiElectronicLoad(Node):
 
         self.operation_mode = "CP"  # "constant power" mode
 
-        self.service_change_load = self.create_service(ChangeLoad, '/change_load', self.change_load)
+        self.service_change_load = self.create_service(ChangeLoad, 'change_load', self.change_load)
 
 
     def command(self, command):

@@ -97,7 +97,7 @@ After starting the package per the steps in _Running the Driver_:
     ```
 3.  Calling the Service
     ```
-    ros2 service call /change_load kikusui_electronic_load_interfaces/srv/ChangeLoad "{enable: True, power: 100.0}"
+    ros2 service call change_load kikusui_electronic_load_interfaces/srv/ChangeLoad "{enable: True, power: 100.0}"
     ```
     
     -   Changing the boolean beside `enable:` to match the relay that you want to control.
